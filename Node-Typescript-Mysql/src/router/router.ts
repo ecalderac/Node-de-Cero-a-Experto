@@ -29,6 +29,7 @@ router.get( '/heroes', (req: Request, res: Response) => {
 
 });
 
+//Ruta para obtener un heroe
 router.get( '/heroes/:id', (req: Request, res: Response) => {
 
     const id = req.params.id;
