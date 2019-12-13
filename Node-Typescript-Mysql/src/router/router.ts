@@ -4,7 +4,7 @@ import MySQL from '../mysql/mysql';
 
 const router = Router();
 
-
+//Ruta para obtener heroes
 router.get( '/heroes', (req: Request, res: Response) => {
 
     const query = `
