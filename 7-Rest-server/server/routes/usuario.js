@@ -18,9 +18,11 @@ app.get('/usuario', verificaToken, (req, res) => {
     //     email: req.usuario.email
     // })
 
+    //desde que registro viene por pagina
     let desde = req.query.desde || 0; //aca manda el parametro de cuantos quiere q aparescan en la paginacion o por defecto q empiece desde 0
     desde = Number(desde); //convierte a tipo number
 
+    //cuantos registro quiero
     let limite = req.query.limite || 5; // limite por defecto 5 o por lo que venga el parametro
     limite = Number(limite); //convierte a number la variable limite
 
